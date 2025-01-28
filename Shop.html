@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="variable.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for Chrome, Safari */
+}
+</style>
+
+<body class="bg-[--mainbg] font-[--f-family]">
+
+    <!-- navbar module -->
+    <div id="navbar" class="font-semibold"></div>
+
+    <!-- video section -->
+
+
+    <div class=" w-full h-screen overflow-hidden shadow-lg">
+        <!-- Video -->
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop>
+          <source src="videos/overlay.mp4" type="video/mp4">
+        </video>
+      
+        <!-- Overlay Text -->
+        <!-- <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+          <h1 class="text-white text-2xl sm:text-4xl font-bold text-center">
+            Welcome to Our Service
+          </h1>
+        </div> -->
+      </div>
+
+      <section class="our_services my-[5rem] px-[1rem] ">
+        <div class="px-6 my-6"> 
+            <h2 class="text-gray-600 font-normal font-bold my-6">Women Collecion</h2>
+            <span class="text-2xl text-[#1f2937] font-bold ">Separated they live in. A small river named Duden flows by their place and supplies it with
+                 <p class="break-all">the necessary regelialia. It is a paradisematic country</p></span>
+            </div>
+            <div class="px-6 my-6 buttons flex space-x-4">
+                <button class="bg-[--btn-sec] text-white py-2 px-6 rounded-lg">See All</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Tops</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Dress</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Short</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Pant</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Blouse</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Shirt</button>
+                <button class="bg-white shadow-lg text-[--text-sec] py-2 px-6 rounded-lg">Bag</button>
+
+            </div>
+
+            <div class="flex items-center space-x-4 px-6 mt-[6rem] ">
+                <!-- Filter Button -->
+                <div class="relative">
+                  <button 
+                    class="bg-white shadow-lg text-[--text-sec] px-4 py-2 rounded-lg flex items-center space-x-2 focus:ring-2 focus:ring-blue-400"
+                    id="filterButton"
+                  >
+                  <img 
+                  src="images/filter.png" 
+                  alt="Filter List" 
+                  class="w-6 h-6 object-contain filter"/>
+                    <span>Filter by</span>
+                  </button>
+                </div>
+              
+                <!-- Sort By Button -->
+                <div class="relative">
+                    <button 
+                      class="bg-white shadow-lg text-[--text-sec] px-4 py-2 rounded-lg flex items-center space-x-2 focus:ring-2 focus:ring-blue-400"
+                      id="filterButton">
+                      <span>Sort by</span>
+                      <img 
+                    src="images/down_arr.png" 
+                    alt="Filter List" 
+                    class="w-6 h-6 object-contain filter"/>
+                    </button>
+                  </div>
+              </div>
+            </section>
+
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-20 py-8 px-8 text-gray-800">
+              <!-- Scroll Item -->
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_4.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_5.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_3.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_2.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_1.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+
+              <div class="h-100 mb-4 rounded-lg scroll-item opacity-0 translate-y-10 transition-all duration-700 ease-in-out">
+                <div class="relative w-full h-[30rem] mb-4 rounded-lg">
+                  <img src="images/img_6.jpg" alt="Sample Image" class="w-full h-full object-cover rounded-2xl">
+                  <div class="absolute bottom-0 left-0 w-full space-x-3 bg-opacity-50 text-white pl-6 py-2 text-sm">
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">85%</span> Overall Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">76%</span> Face Match
+                    </button>
+                    <button class="bg-white opacity-75 text-black py-2 px-6 rounded-lg">
+                      <span class="font-bold">Perfect Color</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="font-medium flex justify-between px-2">
+                  <span>Belted Mini Dress - Soft Jute Material</span>
+                  <span>$660</span>
+                </div>
+              </div>
+              <!-- Add more items as needed -->
+            </section>
+            
+              
+              <section id="scrollablesection" class="font-semibold my-[10rem]"></section>
+              <div id="footer" class="font-semibold"></div>
+
+
+
+              
+              
+              
+     
+
+
+
+
+
+
+<script>
+    fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+
+// scrollbar section
+    fetch('scrollablesection.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('scrollablesection').innerHTML = data;
+            });
+
+         // footer
+    fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+
+  //       document.getElementById('filterButton').addEventListener('click', () => {
+  //   const dropdown = document.getElementById('filterDropdown');
+  //   dropdown.classList.toggle('hidden');
+  // });
+
+  // // Toggle Sort By Dropdown
+  // document.getElementById('sortButton').addEventListener('click', () => {
+  //   const dropdown = document.getElementById('sortDropdown');
+  //   dropdown.classList.toggle('hidden');
+  // });
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const scrollItems = document.querySelectorAll(".scroll-item");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-10");
+        entry.target.classList.add("opacity-100", "translate-y-0");
+      }
+    });
+  });
+
+  scrollItems.forEach((item) => observer.observe(item));
+});
+
+
+</script>      
+</body>
+</html>

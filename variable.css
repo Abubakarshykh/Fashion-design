@@ -1,0 +1,16 @@
+/* variables.css */
+
+/* Colors */
+:root {
+    --f-famiy:sans-serif;
+
+    --mainbg: #fcf7f3;
+    --text-sec:#22272a;
+    --btn-sec:#22272a;
+    --btn-white:#fdf8f4;
+
+    /* footer */
+    --fotr-bg:#22272a;
+    --fotr-btn:#fdf8f4;
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-transparent z-50">
+    <div class="max-w-7xl mx-auto px-1 sm:px-6 "">
+      <div class="flex justify-between items-center h-16">
+        <!-- Left Heading -->
+        <div class="text-2xl p-2 rounded-md text-[--text-sec] bg-[#f8f6f5] opacity-75">
+         E EVENESS
+        </div>
+
+        <!-- Right Navigation Links -->
+        <div class="hidden bg-[#f8f6f5] md:flex space-x-8 p-2 opacity-50 text-[--text-sec] font-small rounded-lg">
+          <a href="#" class="hover:text-gray-800">DASHBOARD</a>
+          <a href="#" class="hover:text-gray-800">SHOP</a>
+          <a href="#" class="hover:text-gray-800">MAGAZINE</a>
+          <a href="#" class="hover:text-gray-800">ACCOUNT</a>
+          <a href="#" class="hover:text-gray-800">CART</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
